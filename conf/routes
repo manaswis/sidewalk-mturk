@@ -3,10 +3,11 @@
 # ~~~~
 
 # Home page
-GET     /                                       @controllers.ApplicationController.index
+GET     /                                       @controllers.ApplicationController.mindex
 POST    /                                       controllers.TeaserController.teaserPost
 
-GET     /home                                   @controllers.ApplicationController.index
+GET     /home                                   @controllers.ApplicationController.mindex
+GET     /index                                  @controllers.ApplicationController.index
 GET     /about                                  @controllers.ApplicationController.about
 GET     /developer                              @controllers.ApplicationController.developer
 GET     /terms                                  @controllers.ApplicationController.terms
